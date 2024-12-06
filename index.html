@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 3px;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 3px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        h2 {
+            margin: 5px 0;
+            text-align: left;
+            font-weight: 800;
+            color: black;
+            font-size: 16px;
+        }
+
+        tr.color {
+            background-color: gray;
+        }
+
+        .black {
+            font-weight: 800;
+            color: black;
+            font-size: 12px;
+        }
+
+        .head {
+            text-align: center;
+        }
+        .img{
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><img class="img" src="./0.png" alt="logo"></th>
+            <th><h1>DECLARACIÓN BIMESTRAL DE AUTORETENCIÓN DEL IMPUESTO DE INDUSTRIA Y COMERCIO</h1></th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="black">Código: FO-FR-40</td>
+            <td class="black">Versión: 01</td>
+            <td class="black">Fecha de Aprobación:</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="black">Radicado No: 9040011193</td>
+            <td class="black">Fecha: 27/09/2023</td>
+            <td class="black">Firma Funcionario que Recibe:</td>
+        </tr>
+    </table>
+
+    <h2>INFORMACIÓN GENERAL</h2>
+    <table>
+        <tr>
+            <th colspan="5">1. Periodo Declarado: Bimestre 04</th>
+            <th colspan="5">Año: 2023</th>
+        </tr>
+        <tr>
+            <td colspan="5">2-3. Tipo de declaración: Inicial</td>
+            <td colspan="5">Radicado Declaración a Corregir</td>
+        </tr>
+        <tr>
+            <td colspan="5">5. Nombre o Razón Social: prueba 3</td>
+            <td >6. NIT: 8356119</td>
+            <td colspan="5">7. Dirección de Notificación: KM 14 A Sur #2A Este 2 prueba 3</td>
+        </tr>
+        <tr>
+            <td colspan="5">8. Municipio de Barranquilla</td>
+            <td>9. Departamento Atlántico</td>
+            <td>10. Teléfono/Celular: 3187943927</td>
+            <td>11. Correo Electrónico: catalina.marroquin@laestrella.gov.co</td>
+            <td colspan="5">12. No Establecimientos de comercio: 1</td>
+        </tr>
+    </table>
+    <h2>LIQUIDACIÓN PRIVADA</h2>
+    <table>
+        <tr>
+            <th class="head" colspan="6">13.Actividades CIIU</th>
+        </tr>
+        <tr>
+            <td>Código CIIU</td>
+            <td>Ingreso ordinario y extraordinario total del bimestre en el municipio ($ COP)</td>
+            <td>Ingreso por actividad excluida, exenta, no sujeta, exportación, devolución, rebajas y descuentos en el municipio ($ COP)</td>
+            <td>Tarifa</td>
+            <td>Ingresos gravables del bimestre en el municipio ($ COP)</td>
+            <td>Total valor autorretención ($ COP)</td>
+        </tr>
+        <tr>
+            <td>4711 - Comercio al por menor en establecimientos no especializados con surtido compuesto principalmente por alimentos, bebidas (alcohólicas y no alcohólicas) o tabaco - HD402 - comercial</td>
+            <td>$10.000.000</td>
+            <td>$2.000.000</td>
+            <td>8.000.000</td>
+            <td>10</td>
+            <td>40.000</td>
+        </tr>
+        <tr class="color">
+            <td colspan="2"></td>
+            <td>Total: {% include '_lista_chequeo.html' with t=q.tipo.pk valor=valores tipo=tipo idiom=idiom only %}</td>
+            <td>Total: {% include '_lista_chequeo.html' with t=q.tipo.pk valor=valores tipo=tipo idiom=idiom only %}</td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+    
+
+    <table>
+        <tr>
+            <td class="black">Total ingreso : 2.000.000 </td>
+            <td class="black">$ 8.000.000</td>
+            <td class="black">$ 40.000</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>20. Tipo de sanción: Extemporaneidad </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>20.1 Valor sanción ($ COP):</td>
+            <td class="black">$67.788</td>
+        </tr>
+        <tr>
+            <td>21. Intereses por mora : </td>
+            <td class="black">$5.667</td>
+        </tr>
+        <tr>
+            <td class="black">22. Subtotal Autorretenciones, Sanciones e Intereses : </td>
+            <td class="black">$113.455</td>
+        </tr>
+        <tr>
+            <td>23. Autorretención practicada en exceso :</td>
+            <td class="black">$</td>
+        </tr>
+        <tr>
+            <td class="black">24. TOTAL A PAGAR : </td>
+            <td class="black">$113.455</td>
+        </tr>
+    </table>
+    <h2>FIRMAS</h2>
+    <table>
+        <tr>
+            <td>25. Alejandro Leon</td>
+            <td colspan="2">28. tuut </td>
+        </tr>
+        <tr>
+            <td>Nombre del Contribuyente o Representante Legal</td>
+            <td>Nombre del Contador o Revisor Fiscal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>26. 8356119 </td>
+            <td>29. 85678</td>
+            <td>30. 5555 </td>
+        </tr>
+        <tr>
+            <td>No documento de identidad</td>
+            <td>No documento de identidad</td>
+            <td>No Tarjeta Profesional</td>
+        </tr>
+        <tr>
+            <td rowspan="2">27. Firmado electrónicamente </td>
+            <td>31. Firmado electrónicamente </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Firma Contador o Revisor Fiscal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Firma del Contribuyente o Representante Legal</td>
+            <td>32.Firma en calidad de:
+                Contador</td>
+                <td></td>
+        </tr>
+    </table>
+</body>
+</html>
